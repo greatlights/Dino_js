@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str;
+        let X = prompt('총 금액');
+        let N = prompt('물건 종류 수');
+        let i;
+        let all = 0;
+        let message;
+
+        for(i=N; i>0; --i){
+            str = prompt('');
+            const words = str.split(' ');
+            all += parseInt(words[0])*parseInt(words[1]);
+        }
+
+        if(all == X){
+            message = "Yes";
+        }
+        else{
+            message = "No";
+        }
+
+        alert(message)
+    </script>
+</body>
+</html>

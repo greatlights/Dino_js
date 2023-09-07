@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let calculator = {
+            sum() {
+                let x = 0;
+                for(let key in f){
+                    x += f[key]
+                }
+                return x;
+            }, 
+
+            mul() {
+                let y = 0;
+                for(let key in f){
+                    y += f[key]
+                }
+                return y;
+            },
+
+            read() {
+                this.a = +prompt('첫 번째 값:', 0);
+                this.b = +prompt('두 번째 값:', 0);
+            }
+        };
+
+        calculator.read();
+        alert(calculator.sum());
+        alert(calculator.mul());
+    </script>
+</body>
+</html>
